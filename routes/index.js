@@ -1,13 +1,10 @@
 'use strict';
 
-const express = require('express');
-const router = express.Router();
+module.exports = (app, db) => {
 
-/**
-	'GET /' - Loads the home page
-*/
-router.get('/', function(req, res, next) {
-  res.render('index');
-});
+	// Loads the home page
+	app.get('/', function(req, res, next) {
+	  res.render('index');
+	});
 
-module.exports = router;
+};

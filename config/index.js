@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = {
-	mongo_uri: 'mongodb://localhost/harvester',
+	mongo_uri: 'mongodb://localhost:27017/harvester',
 	port: 3000
 };
