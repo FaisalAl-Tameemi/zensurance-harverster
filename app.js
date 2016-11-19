@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const config = require('./config'); // config file
 const sassUtil = require('./util/sass'); // sass to css utility helper
 const MongoClient = require('mongodb').MongoClient;
-const asyncParallel = require('async/parallel');
+const asyncParallel = require('async/parallel'); // async control flow library
 
 // create an express app instance
 const app = express();
@@ -36,6 +36,7 @@ const connectToMongo = (_done) => {
 			// stop the server from running
 			throw Error('Failed to connect to mongo database');
 		}
+		console.log('Successfully connected to MongoDB...');
 		// require and add all the router files
 		require('./routes')(app, db);
 		// invoke the callback, pass on the db instance
@@ -51,7 +52,7 @@ const compileSass = (_done) => {
 			// throw error, stop the server from running
 			throw Error('Failed to convert SASS to CSS');
 		}
-		console.log('SASS files have been converted to CSS');
+		console.log('SASS files have been converted to CSS...');
 		// invoke the callback, no need to return any data
 		_done(null);
 	});
@@ -64,7 +65,7 @@ asyncParallel({
 }, (err, results) => { // results --> { sass: null, db_conn: ... }
 	// start listening to server requests
 	app.listen(config.port, () => {
-		console.log(`Express is now listening on port ${config.port}`);
+		console.log(`\nThe app is now running on port ${config.port}`);
 	});
 });
 
