@@ -1,0 +1,53 @@
+
+/**
+	setup animation base
+*/
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+
+/**
+	zoomIn animation
+*/
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+	80% {
+		transform: scale3d(1.06, 1.06, 1.06);
+	}
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+/**
+	zoomOut animation
+*/
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+}

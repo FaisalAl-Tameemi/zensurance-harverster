@@ -1,0 +1,23 @@
+@import './bootstrap/assets/stylesheets/_bootstrap';
+@import './animations';
+
+html, body{
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.zn-jumbo{
+	height: 100%;
+	overflow: hidden;
+}
+
+.overlay{
+	z-index: 99;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}

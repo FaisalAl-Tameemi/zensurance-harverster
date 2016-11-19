@@ -1,0 +1,19 @@
+{
+  "name": "zensurance-harverster",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Faisal Al-Tameemi",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "^2.5.2",
+    "express": "~4.13.4",
+    "morgan": "~1.7.0",
+    "node-sass": "^3.13.0",
+    "serve-favicon": "~2.3.0"
+  }
+}
