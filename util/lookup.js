@@ -52,10 +52,6 @@ const domainLookup = (domain, _done) => {
 	.catch(_done);
 }
 
-nameLookup('Faisal Al-Tameemi', (err, resp) => {
-	debugger;
-});
-
 module.exports = {
 	nameLookup,
 	emailLookup,
