@@ -39,6 +39,7 @@ const connectToMongo = (_done) => {
 		console.log('Successfully connected to MongoDB...');
 		// require and add all the router files
 		require('./routes')(app, db);
+		require('./routes/api')(app, db);
 		// invoke the callback, pass on the db instance
 		_done(null, db);
 	});
