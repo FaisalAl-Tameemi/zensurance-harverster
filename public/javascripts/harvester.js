@@ -105,6 +105,7 @@ class Harvester {
 			this.validateAjax(data)
 				.then((resp) => {
 					if(!resp.is_valid){
+						Materialize.toast('User already exists!', 4000);
 						// show error under email input
 						this.showFieldError('email', resp.message);
 						return _done(resp);
@@ -124,8 +125,8 @@ class Harvester {
 					_done(err);
 					return console.error('Failed to validate email', err);
 				});
+		}else{
+			return _done(errors);
 		}
-		debugger;
-		return _done(errors);
 	}
 };
