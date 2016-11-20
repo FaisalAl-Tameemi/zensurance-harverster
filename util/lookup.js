@@ -35,7 +35,9 @@ const emailLookup = (email, _done) => {
 		}
 	})
 	.then(resp => _done(null, resp.data))
-	.catch(_done);
+	.catch(err => {
+		_done(null, null);
+	});
 }
 
 const linkedinCompanyLookup = (company, _done) => {

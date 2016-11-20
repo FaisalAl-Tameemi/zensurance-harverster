@@ -13,14 +13,14 @@ module.exports = (app, db) => {
 				email: STRING
 	*/
 	app.post('/api/validate-email', (req, res) => {
-		db.collection('users').findOne({
-			email: req.body.email
-		}, (err, user) => {
+		db.collection('inquiries').findOne({
+			'request.email': req.body.email
+		}, (err, inquiry) => {
 			if(err){
 				return res.status(500).json(err);
 			}
 			// if a user exists, the email is already taken
-			if(user){
+			if(inquiry){
 				return res.status(200).json({
 					is_valid: false,
 					message: 'User already exists'
@@ -68,6 +68,13 @@ module.exports = (app, db) => {
 				res.status(201).json(results);
 			});
 		});
+	});
+
+	/**
+		Updates a certain inquiry
+	*/
+	app.put('/api/inquiries', (req, res) => {
+		// TODO: implement
 	});
 
 }

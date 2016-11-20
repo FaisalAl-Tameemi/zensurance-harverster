@@ -14,33 +14,41 @@
 					Tell us a little about you so we can get started.
 				</h5>
 				<br />
-				<div>
+				<div class="input-field col s12">
+					<input type="text" id="full_name" name="full_name" class="validate" />
+					<span class="error"></span>
 					<label for='full_name'>Full Name</label>
-					<input type="text" id="full_name" name="full_name" class="form-control">
 				</div>
-				<div>
+				<div class="input-field col s12">
+					<input type="email" id="email" name="email" class="validate">
+						<span class="error"></span>
+					</input>
 					<label for='email'>Email</label>
-					<input type="text" id="email" name="email" class="form-control">
 				</div>
-				<div>
+				<div class="input-field col s12">
+					<input type="text" id="company" name="company" class="validate">
+						<span class="error"></span>
+					</input>
 					<label for='company'>Company Name</label>
-					<input type="text" id="company" name="company" class="form-control">
 				</div>
-				<a class="btn waves-effect waves-light" id="zn-next" style="float: right;">
-					Next
-				</a>
+				<div class="row step-footer">
+					<a class="btn waves-effect waves-light zn-next" style="float: right;">
+						Next
+					</a>
+				</div>
 	    </section>
 			<section class="zn-step animated" id="step-2">
 				<h5 class="title">
 					One more step and you'll be all set. Please make sure that the correct company address is entered below:
 				</h5>
-				<div>
+				<div class="input-field col s12">
+					<input type="text" id="company_address" name="company_address" class="validate">
 					<label for='company_address'>Company Address</label>
-					<input type="text" id="company_address" name="company_address" class="form-control">
 				</div>
 				<div id="form-map" style="height: 200px;"></div>
-				<a class="btn waves-effect waves-light" id="zn-next" style="float: right;">
-					Next
+				<br />
+				<a class="btn waves-effect waves-light zn-next" style="float: right;">
+					Save & Close
 				</a>
 	    </section>
 	  </div>
