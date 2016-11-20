@@ -2,6 +2,7 @@
 
 const asyncParallel = require('async/parallel');
 const validate = require('../util/validate');
+const lookupUtil = require('../util/lookup');
 
 module.exports = (app, db) => {
 
@@ -45,7 +46,28 @@ module.exports = (app, db) => {
 		Creates a new inquiry
 	*/
 	app.post('/api/inquiries', (req, res) => {
-		// TODO: implement
+		// p.s. use levenstein distance between email domain and comapny name
+		asyncParallel({
+			// nameLookup: (_done) => lookupUtil.nameLookup(req.body.full_name, _done),
+			emailLookup: (_done) => lookupUtil.emailLookup(req.body.email, _done),
+			domainLookup: (_done) => {
+				return lookupUtil.domainLookup(
+					req.body.email.split('@')[1],
+					req.body.company,
+					_done
+				);
+			}
+		}, (err, results) => {
+			if(err){ return res.status(500).json(err); }
+			// insert to inquiry results to DB
+			db.collection('inquiries').insert({
+				request: req.body,
+				results: results
+			}, (err, doc) => {
+				if(err){ return res.status(500).json(err); }
+				res.status(201).json(results);
+			});
+		});
 	});
 
 }

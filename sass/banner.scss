@@ -1,0 +1,21 @@
+
+.zn-banner{
+	height: 100%;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	text-align: center;
+	background: url('/images/asanoha.png');
+
+	.floating-icons{
+		padding-top: 25px;
+		margin-bottom: 65px;
+		width: 2500px;
+		left: 0;
+		animation: marquee 85s ease infinite;
+
+		img{
+			border-radius: 50%;
+			background-color: #fff;
+		}
+	}
+}
