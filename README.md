@@ -2,7 +2,7 @@
 
 ## Landing Page Floating Icons
 
-![](https://cl.ly/1A1X2s033k0k/Image%202016-11-20%20at%205.59.02%20PM.png)
+![](https://cl.ly/1A1X2s033k0k/download/Image%202016-11-20%20at%205.59.02%20PM.png)
 
 
 ## Form Validations
