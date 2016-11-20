@@ -50,4 +50,79 @@
 
 .zoomOut {
   animation-name: zoomOut;
+	animation-duration: 1s;
+}
+
+/**
+	slideInUp animation
+*/
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+/**
+	slideOutDown animation
+*/
+@keyframes slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.slideOutDown {
+  animation-name: slideOutDown;
+	animation-duration: 1s;
+}
+
+
+/**
+	bounce animation
+*/
+@keyframes bounce {
+	25% {
+    transform: translate3d(0, -16px, 0);
+  }
+
+	50% {
+    transform: translate3d(0, 0, 0);
+  }
+
+	75% {
+    transform: translate3d(0, -16px, 0);
+  }
+}
+
+.bounce {
+	animation-duration: 10s;
+  animation-name: bounce;
+	animation-iteration-count: infinite;
+  transform-origin: center bottom;
+}
+
+/**
+	marquee animation
+*/
+@keyframes marquee {
+  0% {
+		transform: translate3d(0, 0, 0);
+	}
+  100% {
+		transform: translate3d(-1000px, 0, 0);
+	}
 }
