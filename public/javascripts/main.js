@@ -53,7 +53,7 @@ $(document).ready(() => {
 					// then load the map using results of step 1 submission
 					harvester.submitBasicInfo((err, lookup_resp) => {
 						// remove the preloader from the DOM
-						step_footer.find($('.preloader-wrapper')).remove();
+						setTimeout(() => step_footer.find($('.preloader-wrapper')).remove(), 2000);
 						// if there's an error, stop
 						if(err){
 							return false;
@@ -94,6 +94,8 @@ $(document).ready(() => {
 					// return harvester.updateSubmission({
 					//
 					// })
+					Materialize.toast('You are all set!', 4000);
+					harvester.reset();
 					break;
 				default:
 					harvester.nextStep();

@@ -13,114 +13,118 @@ $(document).ready(() => {
 	}
 
 	const loadIcons = () => {
-		return [{
-			url: '/images/icons/devices.png',
+		return _.shuffle([{
+			url: 'https://cl.ly/1E1T2z1R290A/Image%202016-11-20%20at%205.13.04%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3c3h2O1g402E/Image%202016-11-20%20at%205.14.20%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/043v1Z2l1D0N/Image%202016-11-20%20at%205.14.10%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/0G0e1V2k2h1G/Image%202016-11-20%20at%205.13.49%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/2a2z0s020y1Y/Image%202016-11-20%20at%205.13.44%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3f203O292J0u/Image%202016-11-20%20at%205.13.33%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3D3k090J0B1n/Image%202016-11-20%20at%205.13.29%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/1E1T2z1R290A/Image%202016-11-20%20at%205.13.04%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3c3h2O1g402E/Image%202016-11-20%20at%205.14.20%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/043v1Z2l1D0N/Image%202016-11-20%20at%205.14.10%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/0G0e1V2k2h1G/Image%202016-11-20%20at%205.13.49%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/2a2z0s020y1Y/Image%202016-11-20%20at%205.13.44%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3f203O292J0u/Image%202016-11-20%20at%205.13.33%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3D3k090J0B1n/Image%202016-11-20%20at%205.13.29%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/1E1T2z1R290A/Image%202016-11-20%20at%205.13.04%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3c3h2O1g402E/Image%202016-11-20%20at%205.14.20%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/043v1Z2l1D0N/Image%202016-11-20%20at%205.14.10%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/0G0e1V2k2h1G/Image%202016-11-20%20at%205.13.49%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/2a2z0s020y1Y/Image%202016-11-20%20at%205.13.44%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3f203O292J0u/Image%202016-11-20%20at%205.13.33%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/2a2z0s020y1Y/Image%202016-11-20%20at%205.13.44%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3f203O292J0u/Image%202016-11-20%20at%205.13.33%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3D3k090J0B1n/Image%202016-11-20%20at%205.13.29%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3D3k090J0B1n/Image%202016-11-20%20at%205.13.29%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/1E1T2z1R290A/Image%202016-11-20%20at%205.13.04%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/3c3h2O1g402E/Image%202016-11-20%20at%205.14.20%20PM.png',
 			title: 'Company 1'
 		},
 		{
-			url: '/images/icons/devices.png',
+			url: 'https://cl.ly/043v1Z2l1D0N/Image%202016-11-20%20at%205.14.10%20PM.png',
 			title: 'Company 1'
-		}]
+		},
+		{
+			url: 'https://cl.ly/0G0e1V2k2h1G/Image%202016-11-20%20at%205.13.49%20PM.png',
+			title: 'Company 1'
+		}]);
 	}
 
 	/**

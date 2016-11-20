@@ -57,7 +57,7 @@ class Harvester {
 	}
 
 	setFieldValue(field, value){
-		$(`#${this._form_id} #${field}`).val(value);
+		$(`#${this._form_id} #${field}`).val(value).focus();
 	}
 
 	nextStep(){
